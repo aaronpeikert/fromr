@@ -7,7 +7,6 @@ Depends: R (>= 3.4.0)
 License: License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: dplyr,
-    formr,
-    stringr,
-    purrr
+Imports: tidyverse
+Suggests:
+    formr
