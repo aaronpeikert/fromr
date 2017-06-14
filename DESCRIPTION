@@ -1,0 +1,13 @@
+Package: fromr
+Title: Enhance the formr Package so import data from formr is more simple
+Version: 0.0.0.9000
+Authors@R: person("Aaron", "Peikert", email = "aaron.peikert@me.com", role = c("aut", "cre"))
+Description: Acces the formr database, flatten the list, convert the data to apropriate type, match the different dataframes by the session code. 
+Depends: R (>= 3.4.0)
+License: License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr,
+    formr,
+    stringr,
+    purrr
