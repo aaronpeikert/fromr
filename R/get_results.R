@@ -9,8 +9,8 @@
 #' @seealso \code{\link{prettify}},\code{\link{formr_api_access_token}}
 #' @export
 get_results <- function(run,surveys,items=NULL,do_prettify=TRUE){
-  message("This may take some time. If you load many or long or surveys with many participants, go grab a coffe.")
-  if(is.null(formr::formr_api_session()))stop("\nNo formr session initialized",'\nUse formr_api_access_token(< MyToken1 >,< MyToken2 >)')
+  message("This may take some time. If you load many or long surveys with many participants, go grab a coffee.")
+  if(is.null(formr::formr_api_session()))stop("\nNo formr session initialized.",'\nUse formr_api_access_token(< MyToken1 >,< MyToken2 >).')
   RUN <- run
   SURVEYS <- surveys
   ITEMS <- items
