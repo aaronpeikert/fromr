@@ -1,3 +1,6 @@
+#' Get one survey from formr
+#'
+#' \code{get_one_result} is for internal use of \code{get_results}
 get_one_result <- function(run, survey, items = "") {
   items_to_paste <- paste0("c(", paste0("'", items, "'", collapse =", "), ")")
   text <- stringr::str_c("

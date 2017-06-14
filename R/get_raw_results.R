@@ -1,9 +1,12 @@
+#' Get raw data from formr
+#'
+#' \code{get_raw_results} is for internal use of \code{get_one_result} wich is in turn for internl use of \code{get_results}
 get_raw_results <- function(request = NULL, token = NULL) {
   stopifnot(!is.null(request))
   get_url = formr::formr_api_session()
   if (!is.null(token))
     get_url = token
-  
+
   query = flatten_list(request)
   query['access_token'] = get_url$query$access_token
   qs = NULL

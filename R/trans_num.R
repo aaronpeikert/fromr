@@ -1,3 +1,6 @@
+#' Turn should be numerics into numerics
+#'
+#' \code{trans_num} turn should be numerics into numerics
 trans_num <- function(x){
   # for test, remove na
   x_test <- na.omit(x)

@@ -10,3 +10,4 @@ LazyData: true
 Imports: tidyverse
 Suggests:
     formr
+RoxygenNote: 6.0.1
