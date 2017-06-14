@@ -1,6 +1,7 @@
 #' Turn null into na
 #'
 #' \code{null_to_na} turn null into na for matrix-like objects
+#' @export
 null_to_na <- function(mat){
   df <- as.data.frame(mat, stringsAsFactors = FALSE)
   df <- lapply(df, null_to_na_atomic)

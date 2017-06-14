@@ -7,6 +7,7 @@
 #' @param conv_num convert should be numerics to numerics
 #' @param join should a full join be done, see also \code{\link{join}}
 #' @seealso \code{\link{join}}
+#' @export
 prettify <- function(list_of_surveys,conv_null=TRUE,conv_num=TRUE,join=T){
   if(conv_null)list_of_surveys <- purrr::map(list_of_surveys, null_to_na)
   if(conv_num)list_of_surveys <- purrr::map(list_of_surveys, ~ as.data.frame(purrr::map(., trans_num), stringsAsFactors=FALSE))

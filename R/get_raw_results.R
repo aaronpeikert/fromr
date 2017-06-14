@@ -1,6 +1,7 @@
 #' Get raw data from formr
 #'
 #' \code{get_raw_results} is for internal use of \code{get_one_result} wich is in turn for internl use of \code{get_results}
+#' @export
 get_raw_results <- function(request = NULL, token = NULL) {
   stopifnot(!is.null(request))
   get_url = formr::formr_api_session()
